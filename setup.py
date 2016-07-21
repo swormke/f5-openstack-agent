@@ -40,6 +40,10 @@ setuptools.setup(
             'f5-oslbaasv2-agent = f5_openstack_agent.lbaasv2.drivers.bigip.agent:main'
         ]
     },
-    install_requires=['f5-sdk==1.0.2']
+    install_requires=[
+        'f5-sdk==1.0.2',
+        'python-barbicanclient==4.0.1',
+        'keystoneauth1==2.8.0',
+    ]
 )
 
